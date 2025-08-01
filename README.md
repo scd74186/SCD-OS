@@ -23,12 +23,20 @@ An operating system written in CircuitPython for the ESP32-S3 with some extra ha
 
 # Overall Hardware:
   2x wii nunchuck breakout boards, both on seperate I2C buses
+  
   NFC module - whether it uses I2C or SPI is undecided
+  
   ILI9488 + touch - screen uses two SPI pinouts, so they will be on two different SPI buses
+  
   SD card - it is built into the screen module I have, but it needs its own SPI bus.
+  
   nRF24L01 - connected to the second processor
+  
   ESP32-S3 - main processor
+  
   ESP32-Wrover-E - secondary processor that communicates with the main processor through three lines - TX and RX for text transmission containing commands, and a data line for streams of continous data at a specified clock rate
+  
   BME-xyz - A module that does barometric pressure, temperature and humidity through I2C, however I forgot specifically which module
+  
   Singular button - a hardwired button connected to one pin that can be used to exit a program, or when a program is using an I2C module on the same line as the WiiChuck and you don't want to constantly query the nunchuck, since that would mean sending information to a different device
   
