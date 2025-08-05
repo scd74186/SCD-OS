@@ -3,10 +3,15 @@ An operating system written in CircuitPython for the ESP32-S3 with some extra ha
 
 # Main Features:
   Easy to program - plug your hardware into your computer to edit the python files
+  
   Seperate programs - programs are stored as .py files, and are executed inside of a 'main' script
+  
   Easy to control - device uses a Wii Nunchuck (3.3v, analog joystick, two buttons, accelerometre, uses I2C)
+  
   "Interesting" hardware - features a radio transmitter and NFC module
+  
   Dual-Processor - there is an esp32-Wrover-E with a camera running arduino that communicates with the main esp32 (circuitpython) to use the camera and also an nRF24l01 for walkie talkie channels
+  
   Colour touchscreen - the screen is a 320x480 SPI ILI9488 colour touchscreen, which is good because it has colour and touch!
 
 # Why?
