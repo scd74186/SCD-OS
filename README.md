@@ -11,9 +11,9 @@ An operating system written in CircuitPython for the ESP32-S3 with some extra ha
   "Interesting" hardware - features a radio transmitter and NFC module
   
   Dual-Processor - there is an esp32-Wrover-E with a camera running arduino that communicates with the main esp32 (circuitpython) to use the camera and also an nRF24l01 for walkie talkie channels
-  
-  Colour touchscreen - the screen is a 320x480 SPI ILI9488 colour touchscreen, which is good because it has colour and touch!
 
+  Oled screen - SH1106 128x64 monochrome oled, which is low resolution but it is simple and doesn't require too much processing power to render or display. originally was a 320x480 SPI ILI9488 with touch and an sd card slot, but I could not get it to work and settled for something smaller that would have a higher refresh rate (more pixels = slower frame times)
+  
 # Why?
   This originally started because I wanted to emulate amiibo without using an nfc card (because I had none) using an nfc module, but found out that it was unfortunately not possible. I found a project for this for a microcontroller that I didn't have, and that inspired me to make my own device with modules for doing various tasks, similar to the Flipper-Zero
 
